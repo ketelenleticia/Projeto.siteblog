@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.inicio{
+.pinicio{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 header{
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,6 +82,15 @@ header{
     color: rgb(255, 243, 243);
 }
 
+.principal{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    color: #fff;
+}
 
 .cards{
     margin: 50px;
@@ -109,6 +118,9 @@ header{
 .card h3{
     justify-content: center;
     align-items: center;
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
 }
 .card p{
     font-size: 14px;
@@ -131,6 +143,120 @@ header{
 }
 
 .card .bot:hover{
-    background:#fff;
+    background:#ebcfcf;
     color: rgb(255, 243, 243);
 }
+
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 10%;
+}
+.inicio img{
+    width: 350px;
+    border-radius: 10px;
+}
+.inicio h1{
+    top: -20px;
+    display: flex;
+    left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    background-color: #d5bcdc;
+    color: #fff;
+}
+
+
+.heading h1{
+    display: flex;
+    align-items: center;
+    background: #d5bcdc;
+    padding: 20px;
+    color: #fff;
+}
+.review .box-conta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 10px;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.box-conta{
+    
+    width: 350px;
+    margin: 0 auto;
+    background: #d5bcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #d5bcdc;
+    overflow: hidden;
+    text-align: left;
+
+}
+
+
+.review .box-conta .box{
+    flex: 1 1 30rem;
+    box-shadow: 0.5rem 1.5rem rgb(205, 155, 228);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.review .box-conta .box .fas-fa-quote-right{
+    position: absolute;
+    bottom: 3rem; right: 3rem;
+    font-size: 6rem;
+    color:#fff;
+}
+.review .box-conta .box .star i{
+    color:var(rgb(211, 74, 238));
+    font-size: 2rem;
+}
+
+.review .box-conta .box  p{
+    color:var(rgb(210, 172, 218));
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+
+.review .box-conta .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-conta .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.review .box-conta .box .user h3{
+    font-size: 2rem;
+    color: #d5bcdc;
+
+}
+
+.review .box-conta .box .user h3{
+    font-size: 1.5rem;
+    color: #333;
+
+}
+
