@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(177, 178, 233);
+}
+
+
+header{
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             padding: 20px 100px;
+             background: transparent;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             z-index: 99;
+        }
+        
+
+        .logo{
+            font-size: 2em;
+            color: #fff;
+            font-size: 2.1em;
+            user-select: none;
+            position: relative;
+            top: -150px;
+        }
+        
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 150px;
+            gap: 20px;
+            position: relative;
+            top: -150px;
+        }
+       .navbar a {
+          position: relative;
+          font-size: 1.1em;
+          text-decoration: none;
+          font-weight: 500;
+          color: #fff;
+          margin-left: 40px;
+        }
+
+      .navbar a::after{
+          content: '';
+          position: absolute;
+          left:0;
+          bottom: -6px;
+          width: 100%;
+          height: 3px;
+          background: #fff;
+          border-radius: 5px;
+          transform: scale(0);
+          transition: transform.5s;
+        }
+
+       .navbar a:hover::after{
+            transform:scale(1) ;
+        }
+
+.cards{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    
+    width: 300px;
+    background: #d5bcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #d5bcdc;
+    overflow: hidden;
+    text-align: left;
+
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+}
+.card p{
+    font-size: 14px;
+    color: #fff;
+    margin: 0 15px 15px;
+}
+
+.card .btn{
+    margin: 15px;
+    background:transparent;
+    text-decoration: none;
+    border: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #d5bcdc;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.card .bot:hover{
+    background:#ebcfcf;
+    color: rgb(255, 243, 243);
+}
+
+footer{
+    background-color: #d5bcdc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.footer-conteiner{
+    max-width: 1000px;
+    margin: auto;
+}
+.link a{
+     color: #fff;
+     margin: 0 10px;
+     text-decoration: none;
+
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+
+h1 {
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+}
